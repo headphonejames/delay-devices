@@ -32,6 +32,7 @@ export class ServerSocket {
             console.info('Handshake received from: ' + socket.id);
 
             const reconnected = Object.values(this.users).includes(socket.id);
+            console.info('Reconnected: ' + reconnected);
 
             if (reconnected) {
                 console.info('This user has reconnected.');
